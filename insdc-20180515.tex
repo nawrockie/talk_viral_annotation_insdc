@@ -164,6 +164,32 @@ rank & species             & \#seqs       & family         & type     & host   &
 \end{itemize}
 \end{itemize}
 
+\end{center}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Our initial goal was to develop an annotation pipeline to \\ benefit Virus Variation}
+
+\small
+\begin{itemize}
+\item general method for annotating existing and new viral genome
+  sequences for a species using trusted annotation for that species (e.g. RefSeq)
+\item identify interesting characteristics that Virus Variation can
+  allow users to sort/select based on:
+\begin{itemize}
+  \item identification of high quality sequences that meet specific expectations
+  \item identification of sequences that deviate from expectations in
+    various ways
+    \begin{itemize}
+      \item early stop codon
+      \item above or below a specific fractional identity to reference 
+      \item more...
+    \end{itemize}
+\end{itemize}
+\end{itemize}
+
 \normalsize
 \textbf{A new goal is to use this annotation pipeline to validate/annotate incoming submissions of sequences from commonly deposited viruses} 
 
@@ -182,8 +208,7 @@ rank & species             & \#seqs       & family         & type     & host   &
 
 \textbf{Four pilot species were chosen from the 15 most prevalent}
 
-\textbf{Most prevalent viral genomes in GenBank\footnote{Current as of March, 2018.}}
-
+\end{center}
 
 \tiny
 \begin{tabular}{r|l|r|l|l|l|r|r}
@@ -223,6 +248,7 @@ rank & species             & \#seqs       & family         & type     & host   &
 
 \tiny
 \flushright{$\dagger$ sum of 11 segments}
+
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -339,16 +365,6 @@ rank & species             & \#seqs       & family         & type     & host   &
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{ajb and aja error codes indicates lack of an expected adjacent feature}
-\vspace{0.5in}
-
-\includegraphics[width=10in]{figs/errornew-4-ajb}
-\end{center}
-\vfill
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-\begin{center}
 \textbf{For screening submissions: mapping error codes to errors and warnings}
 
 \small
@@ -356,10 +372,10 @@ rank & species             & \#seqs       & family         & type     & host   &
 \item Error codes are too complex to return to submitters
 \item Sometimes error codes are legitimate (true early stop)
 \item Sometimes error codes reflect artefacts in the sequence (assembly error)
-\item Example: trc error code leads to misc_feature and note
+\item Example: trc error code leads to misc\_feature and note
 \end{itemize}
 
-\includegraphics[height=3in]{figs/noro-ftable-example}
+\includegraphics[height=4in]{figs/noro-ftable-example}
 
 \end{center}
 \vfill
@@ -370,7 +386,7 @@ rank & species             & \#seqs       & family         & type     & host   &
 \textbf{Future directions (long term)}
 
 \small
-\begin{itemize}
+%\begin{itemize}
 %\item Annotate more species (Norovirus, Zika, and Ebola are currently \\ being checked).
 
 %\item Long term:
@@ -402,6 +418,7 @@ rank & species             & \#seqs       & family         & type     & host   &
 \begin{center}
 \large{\textbf{Acknowledgements}} \\
 
+\normalsize
 \vspace{0.5in}
 
 Alejandro Sch\"{a}ffer \\
@@ -424,37 +441,14 @@ Yiming Bao \\
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{Future directions}
+\textbf{ajb and aja error codes indicates lack of an expected adjacent feature}
+\vspace{0.5in}
 
-\small
-\begin{itemize}
-\item Annotate more species (Norovirus, Zika, and Ebola are currently \\ being checked).
-
-\item Long term:
-\begin{itemize}
-\item  Protein homology searches to supplement or replace nucleotide searches
-\item  Given any viral sequence, find its nearest RefSeq
-\item  Annotate structural RNA features (Infernal is well-suited for this)
-\item  More robust solution to the problem of finding origin sequences
-\item  Multiple alignment based homology searches 
-\end{itemize}
-
-\item Short term: we have a 36 item TODO list that we agreed to with
-  J. Rodney \\ Brister's group on April 12, which includes:
-\begin{itemize}
-  \item Completed items (including analysis of West Nile annotations)
-  \item Loading and using our pipeline's annotations in the Virus Variation
-    database for Dengue and West Nile
-  \item Reviewing Ebola and Norovirus annotations
-  \item Comparing our Ebola annotations to existing annotations
-\end{itemize}
-\end{itemize}
-
-\vfill
+\includegraphics[width=10in]{figs/errornew-4-ajb}
 \end{center}
+\vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
